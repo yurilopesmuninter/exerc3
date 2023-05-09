@@ -53,7 +53,15 @@ def pesoObjeto():
         except:
             print('Você digitou peso do objeto com valor não numérico\nPor favor entre com o peso desejado novamente')
             continue
-
+def rotaObjeto():
+    rotas = {
+        RS: {percurso: 'De Rio de Janeiro até São Paulo', multiplicador: 1},
+        SR: {percurso: 'De São Paulo até Rio de Janeiro', multiplicador: 1}
+    }
+    print('Selecione a rota:')
+    print(' BR - De Brasília para Rio de Janeiro')
+    print(' BS - De Brasília para São Paulo')
+    print(' RB - De Rio de Janeiro para Brasília')
 print('Bem Vindo a Companhia de Logística Yuri Lopes Maria')
 dimensao = dimensoesObjeto()
 peso = pesoObjeto()
